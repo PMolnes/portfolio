@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import SideMenu from './components/layout/SideMenu.vue'
+import SideMenu from './components/layout/SideMenu.vue';
 import HomeView from './views/HomeView.vue';
+import AboutView from './views/AboutView.vue';
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import HomeView from './views/HomeView.vue';
       <HomeView />
     </div>
     <div id="about" class="scroll-page">
-      <h1>hello world</h1>
+      <AboutView class="fade-in" ref="fade-in" />
     </div>
     <div class="scroll-page">
       <h1>hello world</h1>
@@ -51,7 +52,8 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 

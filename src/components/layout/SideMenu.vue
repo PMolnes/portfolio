@@ -7,7 +7,7 @@
       <a class="links" href="#about">about me</a>
       <a class="links" href="">skills</a>
       <a class="links" href="">technologies</a>
-      <a class="links" href="">socials</a>
+      <a class="links" href="">projects</a>
       <a class="links" href="">contact me</a>
     </div>
   </nav>
