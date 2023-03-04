@@ -7,12 +7,12 @@
       <div class="content">
         <div class="information">
           <p>
-            I am 22 years old from Norway. I come from Norway, Aalesund, where I studied a Bachelor in
-            Computer Engineering at NTNU.
+            I am 22 years old from Norway. I come from Norway, Aalesund, where I studied a Bachelor
+            in Computer Engineering at NTNU.
           </p>
           <p>
-            I chose to get into programming because I love creating stuff and because I love learning
-            new stuff.
+            I chose to get into programming because I love creating stuff and because I love
+            learning new stuff.
           </p>
           <p>Here's a list of what I use my freetime on:</p>
           <ul>
@@ -29,13 +29,11 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-.page-title {
-  font-size: 4rem;
-  font-weight: bold;
-  text-decoration: underline;
-}
+<script setup lang="ts">
+import AnimatedComponent from '@/components/AnimatedComponent.vue';
+</script>
 
+<style scoped lang="scss">
 .content {
   display: flex;
   justify-content: center;
@@ -46,8 +44,10 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100%;
-  p {
-    font-size: 2rem;
-  }
+}
+
+p {
+  font-size: 2rem;
+  font-weight: lighter;
 }
 </style>
