@@ -13,7 +13,7 @@ import { onMounted, ref } from 'vue';
 
 const props = withDefaults(
   defineProps<{
-    animationType?: string;
+    animationType?: 'fade' | 'zoom' | 'fade-slide';
   }>(),
   {
     animationType: 'fade'
@@ -30,7 +30,7 @@ const observer = new IntersectionObserver(
       observer.unobserve(target.value);
     }
   },
-  { threshold: 0.5 }
+  { threshold: 1.0 }
 );
 
 onMounted(() => {
@@ -69,11 +69,13 @@ onMounted(() => {
 .fade-slide-leave-active {
   transition: transform 500ms ease, opacity 500ms ease;
 }
+
 .fade-slide-enter-from,
 .fade-slide-leave-to {
   opacity: 0;
   transform: translateX(100rem);
 }
+
 .fade-slide-enter-to,
 .fade-slide-leave-from {
   opacity: 1;
