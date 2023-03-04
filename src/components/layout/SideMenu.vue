@@ -10,10 +10,19 @@
       <a class="links" href="">projects</a>
       <a class="links" href="">contact me</a>
     </div>
+    <div class="socials">
+      <a href="https://github.com/PMolnes" target="_blank">
+        <img class="icon" src="@/assets/github-mark-white.png" alt="github icon" />
+      </a>
+    </div>
   </nav>
 </template>
 
 <style lang="scss" scoped>
+.icon {
+  height: 50px;
+}
+
 .sidemenu {
   max-height: 100vh;
   background-color: #222222;
