@@ -2,6 +2,7 @@
 import SideMenu from './components/layout/SideMenu.vue';
 import HomeView from './views/HomeView.vue';
 import AboutView from './views/AboutView.vue';
+import SkillsView from './views/TechnologyView.vue';
 </script>
 
 <template>
@@ -11,10 +12,10 @@ import AboutView from './views/AboutView.vue';
       <HomeView />
     </div>
     <div id="about" class="scroll-page">
-      <AboutView class="fade-in" ref="fade-in" />
+      <AboutView  />
     </div>
     <div class="scroll-page">
-      <h1>hello world</h1>
+      <SkillsView />
     </div>
     <div class="scroll-page">
       <h1>hello world</h1>
@@ -23,6 +24,12 @@ import AboutView from './views/AboutView.vue';
 </template>
 
 <style lang="scss">
+.page-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 #app {
   font-family: 'Fira Code', monospace;
   color: white;
